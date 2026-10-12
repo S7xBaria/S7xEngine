@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#0A0000" android:padding="4dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+<ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/snake_logo"/>
+<TextView android:id="@+id/tvTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="S7xENGINE v5.0" android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:textColor="#FF0000" android:shadowColor="#FF0000" android:shadowRadius="10"/>
+</LinearLayout>
+<TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ready" android:padding="3dp" android:background="#1A0000" android:textColor="#FF3333" android:textSize="10sp"/>
+<TextView android:id="@+id/tvSelected" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No process selected" android:padding="3dp" android:textSize="10sp" android:textStyle="bold" android:textColor="#FF6666" android:background="#1A0000"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<EditText android:id="@+id/etSearch" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:hint="Search" android:textColorHint="#666666" android:textColor="#FFFFFF" android:textSize="11sp"/>
+<Button android:id="@+id/btnSearch" android:layout_width="40dp" android:layout_height="36dp" android:text="S" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnRefresh" android:layout_width="40dp" android:layout_height="36dp" android:text="R" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnRegions" android:layout_width="40dp" android:layout_height="36dp" android:text="M" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnSpeedhack" android:layout_width="40dp" android:layout_height="36dp" android:text="T" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnPointer" android:layout_width="40dp" android:layout_height="36dp" android:text="P" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+</LinearLayout>
+<androidx.recyclerview.widget.RecyclerView android:id="@+id/rvProcesses" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:background="#0F0000"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Results" android:textColor="#FF3333" android:padding="2dp" android:textStyle="bold" android:textSize="10sp"/>
+<androidx.recyclerview.widget.RecyclerView android:id="@+id/rvResults" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:background="#0F0000"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<EditText android:id="@+id/etValue" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:hint="Value" android:inputType="numberDecimal|numberSigned" android:textColorHint="#666666" android:textColor="#FFFFFF" android:textSize="11sp"/>
+<Spinner android:id="@+id/spType" android:layout_width="wrap_content" android:layout_height="36dp" android:backgroundTint="#FF0000"/>
+<EditText android:id="@+id/etNewValue" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:hint="New" android:inputType="numberDecimal|numberSigned" android:textColorHint="#666666" android:textColor="#FFFFFF" android:textSize="11sp"/>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:id="@+id/btnSearchMode" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="Mode" android:backgroundTint="#CC0000" android:textColor="#FFFFFF" android:textSize="9sp" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnScanEqual" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="=" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnScanGreater" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="&gt;" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnScanLess" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="&lt;" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnScanRange" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="R" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnFilter" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="F" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnFuzzy" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="Z" android:backgroundTint="#8B0000" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:id="@+id/btnWriteAll" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="All" android:backgroundTint="#FF0000" android:textColor="#FFFFFF" android:textSize="9sp" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnWriteSelected" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="Sel" android:backgroundTint="#FF0000" android:textColor="#FFFFFF" android:textSize="9sp" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnFreeze" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="Frz" android:backgroundTint="#0088FF" android:textColor="#FFFFFF" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnSelectAll" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="AllSel" android:backgroundTint="#4B0000" android:textColor="#FF6666" android:textSize="9sp" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnClear" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="Clr" android:backgroundTint="#4B0000" android:textColor="#FF6666" android:minWidth="0dp" android:padding="0dp"/>
+<Button android:id="@+id/btnSaved" android:layout_width="0dp" android:layout_weight="1" android:layout_height="34dp" android:text="Q" android:backgroundTint="#4B0000" android:textColor="#FF6666" android:minWidth="0dp" android:padding="0dp"/>
+</LinearLayout></LinearLayout>
