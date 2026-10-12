@@ -244,7 +244,7 @@ class MainActivity : AppCompatActivity() {
         if (spid <= 0) { t("اختر عملية"); return }
         lifecycleScope.launch {
             val m = withContext(Dispatchers.IO) { MemoryEngine.getMaps(spid) }
-            AlertDialog.Builder(this).setTitle("مناطق (" + m.size + ")")
+            AlertDialog.Builder(this@MainActivity).setTitle("مناطق (" + m.size + ")")
                 .setMessage(m.take(100).joinToString("\n") {
                     "0x" + it.start.toString(16) + "-0x" + it.end.toString(16) + " " + it.perms
                 }).setPositiveButton("إغلاق", null).show()
