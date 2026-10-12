@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="6dp" android:gravity="center_vertical" android:background="#1A0000">
-<CheckBox android:id="@+id/cbItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="#FF0000"/>
-<TextView android:id="@+id/tvAddr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0x" android:textColor="#FF6666" android:textSize="11sp"/>
-<TextView android:id="@+id/tvVal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold"/>
-<TextView android:id="@+id/tvFrozen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F" android:textColor="#00CCFF" android:textSize="14sp" android:visibility="gone"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="8dp" android:gravity="center_vertical"
+    android:background="#1A0000">
+    <CheckBox android:id="@+id/cbItem" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:buttonTint="#FF0000"/>
+    <TextView android:id="@+id/tvAddr" android:layout_width="0dp"
+        android:layout_height="wrap_content" android:layout_weight="1"
+        android:text="0x" android:textColor="#FF6666" android:textSize="11sp"/>
+    <TextView android:id="@+id/tvVal" android:layout_width="0dp"
+        android:layout_height="wrap_content" android:layout_weight="1"
+        android:text="0" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/tvFrozen" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="❄" android:textColor="#00CCFF"
+        android:textSize="14sp" android:visibility="gone"/>
 </LinearLayout>
