@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22.1)
+project("s7xengine")
+add_library(s7xengine SHARED memedit.cpp)
+find_library(log-lib log)
+target_link_libraries(s7xengine ${log-lib})
+add_library(speedhack SHARED speedhack.cpp)
+target_link_libraries(speedhack ${log-lib} dl)
