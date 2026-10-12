@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources><color name="primary">#FF0000</color><color name="dark_red">#8B0000</color></resources>
+<resources>
+    <color name="primary">#FF0000</color>
+    <color name="dark_red">#8B0000</color>
+    <color name="blood">#4B0000</color>
+</resources>
