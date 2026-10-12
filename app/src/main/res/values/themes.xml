@@ -1,0 +1,10 @@
+<resources>
+<style name="Theme.S7xEngine" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+<item name="colorPrimary">#FF0000</item>
+<item name="colorPrimaryVariant">#8B0000</item>
+<item name="colorOnPrimary">#FFFFFF</item>
+<item name="android:windowBackground">#0A0000</item>
+<item name="android:statusBarColor">#000000</item>
+<item name="android:navigationBarColor">#000000</item></style>
+<style name="Theme.S7xEngine.Splash" parent="Theme.S7xEngine"><item name="android:windowBackground">#000000</item></style>
+</resources>
