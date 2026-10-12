@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="8dp" android:background="?attr/selectableItemBackground">
+<TextView android:id="@+id/tvProcPid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[0]" android:textSize="11sp" android:textColor="#FF9800" android:minWidth="60dp"/>
+<TextView android:id="@+id/tvProcName" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="p" android:textSize="12sp" android:textColor="#EEEEEE" android:maxLines="1" android:ellipsize="end"/>
+<TextView android:id="@+id/tvProcArch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[x64]" android:textSize="11sp" android:textColor="#FF0000"/>
+</LinearLayout>
