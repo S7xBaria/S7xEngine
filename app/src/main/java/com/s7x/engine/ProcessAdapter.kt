@@ -17,11 +17,11 @@ class ProcessAdapter(private var items: List<MemoryEngine.ProcessInfo>,
     override fun onCreateViewHolder(p: ViewGroup, t: Int): VH =
         VH(LayoutInflater.from(p.context).inflate(R.layout.item_process, p, false))
     override fun onBindViewHolder(h: VH, pos: Int) {
-        val it = items[pos]
-        h.tvName.text = it.name
-        h.tvPid.text = "[" + it.pid + "]"
-        h.tvArch.text = "[" + it.arch + "]"
-        h.itemView.setOnClickListener { onClick(it) }
+        val item = items[pos]
+        h.tvName.text = item.name
+        h.tvPid.text = "[" + item.pid + "]"
+        h.tvArch.text = "[" + item.arch + "]"
+        h.itemView.setOnClickListener { onClick(item) }
     }
     override fun getItemCount() = items.size
     fun update(n: List<MemoryEngine.ProcessInfo>) { items = n; notifyDataSetChanged() }
